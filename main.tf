@@ -72,7 +72,8 @@ resource "aws_default_vpc" "default_vpc" {
 # 创建 EC2 实例
 resource "aws_instance" "linux_instance" {
   # 使用的 AMI 镜像 ID，us-east-1区的 Amazon linux 2023
-  ami = "ami-01816d07b1128cd2d"
+  #ami = "ami-01816d07b1128cd2d"
+  ami = "ami-07a48f4a2abe3a5fc"
   # 实例类型
   instance_type = "t2.micro"
   # 密钥对名称
